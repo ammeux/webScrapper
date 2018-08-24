@@ -1,0 +1,9 @@
+pokeSearch results:
+<br />
+{% for pokemon in values %}
+    <a href={{pokemon.name}}> {{ pokemon.name }} </a>
+    Id: {{ pokemon.id }}<br />
+    Type: {{ pokemon.type }}<br />
+<br />
+<hr />
+{% endfor %}

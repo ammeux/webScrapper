@@ -1,0 +1,9 @@
+{% from "_formhelpers.html" import render_field %}
+<form method=post>
+    <dl>
+        {{ render_field(form.ability) }}
+        {{ render_field(form.generations) }}
+        {{ render_field(form.tier) }}
+    </dl>
+    <p><input type=submit value=Search>
+</form>
